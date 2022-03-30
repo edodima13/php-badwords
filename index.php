@@ -4,13 +4,14 @@
     //stampare il testo e la sua lunghezza
     $lenght_text = strlen($text);
     //far generare dall'utente una parola da censurare tramite get
-    $badword = $_GET['badword']
+    $badword = $_GET['badword'];
     //sostituire con tre (***) la parola da censurare
+    $censored_text = str_replace($badword, '***', $text);
 ?>
 <?php 
-    echo $text;
+    echo $censored_text; 
     echo $lenght_text;  
-    var_dump($badword);    
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
