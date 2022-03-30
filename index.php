@@ -4,12 +4,13 @@
     //stampare il testo e la sua lunghezza
     $lenght_text = strlen($text);
     //far generare dall'utente una parola da censurare tramite get
+    $badword = $_GET['badword']
     //sostituire con tre (***) la parola da censurare
 ?>
 <?php 
     echo $text;
-    echo $lenght_text;
-        
+    echo $lenght_text;  
+    var_dump($badword);    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,9 +21,5 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
-               
-
-    </h1>
 </body>
 </html>
