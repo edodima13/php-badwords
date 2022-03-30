@@ -1,9 +1,15 @@
 <?php 
     //creare una variabile con file di testo
-    $text = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quas voluptatum vel perferendis eveniet accusamus iste nulla, sit officiis fuga.'
+    $text = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quas voluptatum vel perferendis eveniet accusamus iste nulla, sit officiis fuga.';
     //stampare il testo e la sua lunghezza
+    $lenght_text = strlen($text);
     //far generare dall'utente una parola da censurare tramite get
     //sostituire con tre (***) la parola da censurare
+?>
+<?php 
+    echo $text;
+    echo $lenght_text;
+        
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +21,7 @@
 </head>
 <body>
     <h1>
-        <?php echo $text ?>       
+               
 
     </h1>
 </body>
